@@ -24,7 +24,7 @@
 # Tabella `Corsi`
 -id (int, PK, auto increment)
 -nome (varchar(150))
--id_corso_di_laurea (int, FK)
+-id_corso (int, FK)
 -descrizione (text)
 -crediti (int)
 -semestre (varchar(20))
@@ -69,7 +69,7 @@
 -esito (varchar(20))
 
 
-# Tabella `Iscrizioni`
+# Tabella `appello_studente`
 -id (int, PK, auto increment)
 -id_studente (int, FK)
 -id_esame (int, FK)
