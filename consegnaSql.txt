@@ -31,3 +31,9 @@ Soluzione
     SELECT *
     FROM students
     WHERE TIMESTAMPDIFF(YEAR, date_of_birth, CURDATE()) > 30;
+
+-4
+    SELECT *
+    FROM `courses`
+    WHERE year = 1
+    AND period = 'I semestre';
