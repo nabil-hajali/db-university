@@ -53,3 +53,8 @@ Soluzione
 -7 
     SELECT COUNT(id)
 	FROM `departments`;
+
+-8 
+    SELECT COUNT(*)
+    FROM `teachers`
+    WHERE `phone`IS NULL;
