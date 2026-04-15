@@ -49,3 +49,7 @@ Soluzione
     SELECT *
     FROM `degrees`
     WHERE `level` = 'magistrale'
+
+-7 
+    SELECT COUNT(id)
+	FROM `departments`;
