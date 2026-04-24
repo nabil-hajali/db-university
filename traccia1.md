@@ -25,3 +25,10 @@ SELECT degrees.name, students.*
 FROM students 
 JOIN degrees ON students.degree_id = degrees.id
 WHERE degrees.name = 'Corso di Laurea in Economia';
+
+2.
+SELECT departments.name, degrees.*
+FROM departments
+JOIN degrees ON departments.id = degrees.department_id
+WHERE degrees.level = 'magistrale' 
+AND departments.name = 'Dipartimento di Neuroscienze';
