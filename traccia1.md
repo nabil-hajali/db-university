@@ -39,3 +39,10 @@ FROM teachers
 JOIN course_teacher ON teachers.id = course_teacher.teacher_id
 JOIN courses ON courses.id = course_teacher.course_id
 WHERE teachers.name = 'Fulvio' AND teachers.surname = 'Amato';
+
+4.
+SELECT students.id, students.surname, students.name, departments.name AS department_name, students.degree_id, degrees.name AS degrees_name
+FROM students
+JOIN degrees ON students.degree_id = degrees.id
+JOIN departments ON degrees.department_id = departments.id
+ORDER BY students.surname ASC, students.name ASC;
