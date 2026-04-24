@@ -20,3 +20,7 @@ FROM teachers GROUP BY teachers.office_address
 SELECT exam_id AS id_appelli, 
 ROUND(AVG(exam_student.vote), 2) AS media_voti 
 FROM exam_student GROUP BY exam_student.exam_id
+
+4.
+SELECT departments.name, count(*) AS corsi_di_laurea 
+FROM degrees JOIN departments ON departments.id = degrees.department_id GROUP BY department_id
